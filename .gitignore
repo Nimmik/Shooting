@@ -1,1 +1,7 @@
 /Shooting/Temp/
+/Shooting/Library/metadata/
+/Shooting/Library/ScriptAssemblies/
+/Shooting/Library/ShaderCache/
+/Shooting/Library/InspectorExpandedItems
+*.log
+*.meta
