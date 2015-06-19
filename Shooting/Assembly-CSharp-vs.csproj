@@ -49,6 +49,7 @@
      <Compile Include="Assets\Script\Constants.cs" />
      <Compile Include="Assets\Script\EnemyScript.cs" />
      <Compile Include="Assets\Script\EnemySpawner.cs" />
+     <Compile Include="Assets\Script\GameBoundary.cs" />
      <Compile Include="Assets\Script\PlayerScript.cs" />
      <Compile Include="Assets\Script\ProneToGravity.cs" />
  <Reference Include="UnityEngine.UI">

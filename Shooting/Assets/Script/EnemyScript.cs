@@ -27,6 +27,10 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision other){
+		if (!other.gameObject.CompareTag("GameBoundary")){
+			//Explosion Animation
+			Debug.Log("notgameboundary");
+		}
 		Destroy (this.gameObject);
 	}
 
