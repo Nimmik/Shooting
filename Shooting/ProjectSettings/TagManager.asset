@@ -7,6 +7,9 @@ TagManager:
   - GameBoundary
   - EnemyAircraft
   - Bullet
+  - EnemyShip
+  - Player
+  - Missile
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - distanceCheck
   - 
   - 
   - 
