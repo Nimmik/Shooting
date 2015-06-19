@@ -12,8 +12,8 @@ namespace GravityShooting
 {
 	public static class Constants
 	{
-		public static float EnemySpawnIntervalFrom = 0.5f;
-		public static float EnemySpawnIntervalTo = 1f;
+		public static float EnemySpawnIntervalFrom = 1f;
+		public static float EnemySpawnIntervalTo = 2f;
 		public static float TopOfTheMap = 15f;
 		public static float LeftBound = -5f;
 	}

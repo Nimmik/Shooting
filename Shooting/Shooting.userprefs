@@ -5,9 +5,9 @@
       <File FileName="Assets\Script\EnemySpawner.cs" Line="23" Column="86" />
       <File FileName="Assets\Script\Constants.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\PlayerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\EnemyScript.cs" Line="35" Column="3" />
+      <File FileName="Assets\Script\EnemyScript.cs" Line="33" Column="1" />
       <File FileName="Assets\GameBoundary.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\GameBoundary.cs" Line="15" Column="2" />
+      <File FileName="Assets\Script\GameBoundary.cs" Line="16" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

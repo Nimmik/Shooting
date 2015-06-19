@@ -12,4 +12,12 @@ public class GameBoundary : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnCollisionEnter(Collision other){
+		Destroy (other.gameObject);
+	}
+
+	void OnTriggerEnter(Collider other){
+		Destroy (other.gameObject);
+	}
 }
