@@ -47,10 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Constants.cs" />
+     <Compile Include="Assets\Script\DistanceCheck.cs" />
      <Compile Include="Assets\Script\EnemyScript.cs" />
      <Compile Include="Assets\Script\EnemySpawner.cs" />
+     <Compile Include="Assets\Script\MissileMove.cs" />
      <Compile Include="Assets\Script\PlayerScript.cs" />
      <Compile Include="Assets\Script\ProneToGravity.cs" />
+     <Compile Include="Assets\Script\Shoot.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

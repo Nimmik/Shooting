@@ -20,12 +20,6 @@ public class EnemyScript : MonoBehaviour {
 		this.transform.rotation = Quaternion.LookRotation (rb.velocity);
 	}
 
-	void OnTriggerStay(Collider other){
-		var dir = this.transform.position - other.transform.position;
-		dir.z = 0;
-		rb.AddForce (dir.normalized/4);
-	}
-
 	void OnCollisionEnter(Collision other){
 		Destroy (this.gameObject);
 	}
