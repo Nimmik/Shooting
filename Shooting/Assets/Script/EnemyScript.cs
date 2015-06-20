@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 	Rigidbody rb;
+	public GameObject player;
+	Vector3 dir;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +29,4 @@ public class EnemyScript : MonoBehaviour {
 		}
 		Destroy (this.gameObject);
 	}
-
-
 }

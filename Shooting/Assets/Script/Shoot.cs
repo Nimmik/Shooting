@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour {
 	public GameObject player;
 	public float NextShootTime = 1f;
 	int distanceCheckLayer;
+	Vector3 dir;
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +18,15 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (NextShootTime <= Time.time) {
-			Fire ();
+			dir = firePosition1.position - player.transform.position;
+			Fire (dir);
 			NextShootTime = Time.time + 3f;
 		}
 	}
 
-	void Fire(){
+	void Fire(Vector3 dir){
 		if (!Physics.Linecast (this.gameObject.transform.position, player.transform.position, distanceCheckLayer)) {
-			Instantiate(missile, firePosition1.position, this.gameObject.transform.rotation);
+			Instantiate(missile, firePosition1.position, Quaternion.LookRotation(dir));
 			//Instantiate(missile, firePosition2.position, this.gameObject.transform.rotation);
 		}
 	}

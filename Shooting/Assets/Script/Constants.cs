@@ -18,6 +18,8 @@ namespace GravityShooting
 		public static float LeftBound = -5f;
 
 		public static float SkyboxRotateSpeed = 3f;
+
+		public static float LookAtPlayerThreshold = 3f;
 	}
 }
 
