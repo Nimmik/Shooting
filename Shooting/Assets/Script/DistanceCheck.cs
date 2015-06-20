@@ -23,6 +23,7 @@ public class DistanceCheck : MonoBehaviour {
 			Vector3 Difference = dirForward - directionToPlayer;
 			if (Difference.magnitude > Constants.LookAtPlayerThreshold) {
 				rb.AddForce (new Vector3 (Difference.x>0?-0.5f:0.5f, 0, 0));
+				anim.SetFloat("Rotation", Difference.x);
 			}
 		}
 	}
