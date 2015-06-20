@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePosition1: {fileID: 451676}
-  missile: {fileID: 104388, guid: 8b36a9eb507d6814ca13c8fd566ac17b, type: 2}
+  missile: {fileID: 119254, guid: 350bc406ae165ef42a48fcfcaf3de1c5, type: 2}
   player: {fileID: 179494, guid: c811b719472c9e24daaea536b43622e5, type: 2}
   NextShootTime: 1
 --- !u!114 &11461636
@@ -376,6 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e985fdf50648b4795e13e199ea0c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 179494, guid: c811b719472c9e24daaea536b43622e5, type: 2}
 --- !u!135 &13521666
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -425,7 +426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Convex
@@ -442,7 +443,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: missile
       value: 
-      objectReference: {fileID: 104388, guid: 8b36a9eb507d6814ca13c8fd566ac17b, type: 2}
+      objectReference: {fileID: 119254, guid: 350bc406ae165ef42a48fcfcaf3de1c5, type: 2}
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: EnemyShip
@@ -459,6 +460,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .25
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 179494, guid: c811b719472c9e24daaea536b43622e5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123978}
