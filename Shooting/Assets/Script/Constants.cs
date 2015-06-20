@@ -16,6 +16,8 @@ namespace GravityShooting
 		public static float EnemySpawnIntervalTo = 2f;
 		public static float TopOfTheMap = 15f;
 		public static float LeftBound = -5f;
+
+		public static float SkyboxRotateSpeed = 3f;
 	}
 }
 
