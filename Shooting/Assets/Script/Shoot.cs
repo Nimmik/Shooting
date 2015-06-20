@@ -19,7 +19,8 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 		if (NextShootTime <= Time.time) {
 			dir = firePosition1.position - player.transform.position;
-			Fire (dir);
+			if(this.gameObject.transform.position.z > player.transform.position.z)
+				Fire (dir);
 			NextShootTime = Time.time + 3f;
 		}
 	}
