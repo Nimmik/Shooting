@@ -15,7 +15,7 @@ public class MissileMove : MonoBehaviour {
 	void Update () {
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnCollisionEnter(Collision other){
 		if (other.gameObject.CompareTag ("EnemyShip") || other.gameObject.CompareTag ("EnemyShip")) {
 			Destroy (this.gameObject);
 			Destroy (other.gameObject);
