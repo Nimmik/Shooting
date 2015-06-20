@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using GravityShooting;
 
 public class DistanceCheck : MonoBehaviour {
 	Rigidbody rb;
@@ -15,17 +16,11 @@ public class DistanceCheck : MonoBehaviour {
 	void Update () {
 		if (distanceChecking == false) {
 			Vector3 origin = this.transform.parent.position;
-			Vector3 dirForward = this.transform.parent.TransformDirection(Vector3.forward);
+			Vector3 dirForward = this.transform.parent.TransformDirection (Vector3.forward);
 			Vector3 directionToPlayer = player.transform.position - origin;
 			Vector3 Difference = dirForward - directionToPlayer;
-			if(Difference.magnitude > 1f){
-				if(origin.x > 0)
-					rb.AddForce(new Vector3(-1 ,0 ,0));
-				else
-					rb.AddForce(new Vector3(1 ,0 ,0));
-			}
-			else if(Difference.magnitude < 1f && Difference.magnitude > 0f){
-				rb.velocity = directionToPlayer;
+			if (Difference.magnitude > Constants.LookAtPlayerThreshold) {
+				rb.AddForce (new Vector3 (Difference.x>0?-0.5f:0.5f, 0, 0));
 			}
 		}
 	}
@@ -40,10 +35,14 @@ public class DistanceCheck : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		distanceChecking = true;
+		if (!other.gameObject.CompareTag ("Missile")) {
+			distanceChecking = true;
+		}
 	}
 
 	void OnTriggerExit(Collider other){
-		distanceChecking = false;
+		if (!other.gameObject.CompareTag ("Missile")) {
+			distanceChecking = false;
+		}
 	}
 }
